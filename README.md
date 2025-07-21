@@ -5,11 +5,13 @@ This project is a full-stack application for managing a list of songs. It demons
 ## Features
 
 ### Frontend Features
+
 - **Paginated List of Songs**: Displays a paginated list of songs with details like title, artist, album, and year.
 - **CRUD Operations**: Allows users to create, read, update, and delete songs via API calls.
 - **React Hooks**: Utilizes `useState` and `useEffect` for state management.
 
 ### Backend Integration
+
 - **API Integration**: Uses JSONPlaceholder as the backend for managing songs.
 - **API Endpoints**:
   - **Fetch Songs**: `GET /songs`
@@ -52,29 +54,35 @@ This project is a full-stack application for managing a list of songs. It demons
     - Deletes a song by ID.
 
 ### Testing
+
 - **Unit Tests**: Includes unit tests for reducers and sagas.
 - **Component Tests**: Tests for `SongsList` and `SongForm` components using React Testing Library.
 
 ### Performance
+
 - **Code Splitting**: Implements lazy loading for components to optimize bundle size.
 
 ### Deployment
+
 - **Frontend**: Hosted on Netlify.
 
 ## Setup Instructions
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd Song-Management
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm start
    ```
@@ -87,11 +95,13 @@ This project is a full-stack application for managing a list of songs. It demons
 ## Webpack Configuration
 
 The Webpack setup includes:
+
 - **Custom Rules**: Handles JavaScript, CSS, and image files.
 - **Environment Variables**: Uses `dotenv` to manage environment variables like `API_BASE_URL`.
 - **Plugins**: Includes `HtmlWebpackPlugin` for generating the HTML file and `DefinePlugin` for injecting environment variables.
 
 ### Key Configuration
+
 ```javascript
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -149,6 +159,7 @@ module.exports = {
 - **ChatGPT**: Provided guidance on Webpack configuration and testing strategies.
 
 ### Verification Steps
+
 - Verified API calls using Postman.
 - Tested components using React Testing Library.
 - Debugged Redux state updates using Redux DevTools.
